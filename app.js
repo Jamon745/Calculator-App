@@ -17,15 +17,12 @@ for (let x = 0; x < btnEl.length; x++){
    
   });
   
-}  
-
 function clearResult (){
     inputField.value = "";
 }o
 
-function minusResult (buttonValue) {
-    const deleteLastNumber = document.getElementById("result")
-    deleteLastNumber.value = deleteLastNumber.slice(0, -1);
+function minusResult () {
+    inputField.value = inputField.value.toString.slice(0, -1);
 }
 
 function calculateResult (){
@@ -35,4 +32,6 @@ function calculateResult (){
 function appendValue (buttonValue){
     inputField.value += buttonValue;
 }
+
+}  
 
