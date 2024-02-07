@@ -17,9 +17,11 @@ for (let x = 0; x < btnEl.length; x++){
    
   });
   
+}  
+
 function clearResult (){
     inputField.value = "";
-}o
+}
 
 function minusResult () {
     inputField.value = inputField.value.toString.slice(0, -1);
@@ -32,6 +34,4 @@ function calculateResult (){
 function appendValue (buttonValue){
     inputField.value += buttonValue;
 }
-
-}  
 
