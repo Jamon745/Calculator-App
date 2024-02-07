@@ -5,9 +5,7 @@ const btnEl = document.querySelectorAll("button");
 for (let x = 0; x < btnEl.length; x++){
     btnEl[x].addEventListener("click", () => {
     const buttonValue = btnEl[x].textContent;
-    if (buttonValue === "Del"){
-        minusResult ()
-    }else if(buttonValue === "C"){
+    if(buttonValue === "C"){
         clearResult ()
     }else if (buttonValue === "="){
         calculateResult ()
@@ -21,10 +19,6 @@ for (let x = 0; x < btnEl.length; x++){
 
 function clearResult (){
     inputField.value = "";
-}
-
-function minusResult () {
-    inputField.value = inputField.value.toString.slice(0, -1);
 }
 
 function calculateResult (){
